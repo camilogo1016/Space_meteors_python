@@ -35,7 +35,7 @@ class Laser(pygame.sprite.Sprite):
         self.rect.y -= laser_speed
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self):     
         super().__init__()
         self.image = pygame.image.load("player1.png").convert() #load image
         self.image = pygame.transform.scale(self.image, (size_player, size_player))  #resize
